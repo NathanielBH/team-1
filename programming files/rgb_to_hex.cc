@@ -21,5 +21,5 @@ std::string rgb_to_hex(int r, int g, int b)
 
     return ss.str();
 }
-
+ 
 //Test with std::string hexColor = rgb_to_hex(255, 127, 0); // returns "FF7F00"
