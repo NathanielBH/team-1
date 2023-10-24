@@ -1,3 +1,4 @@
+// MS BUGS: added wrong variable name and incorrectly implemented if statement
 // summing even numbers in the fibonacci sequence
 public class sum_even_fibonacci {
 
@@ -11,14 +12,15 @@ public class sum_even_fibonacci {
         // going through this loop and doing the fibinaci sequence for each one
         while (b < 4000000) {
             if (b % 2 == 0) {
-                sumEven += b;
+                
             }
+            sum += b;
             int temp = b;
             b = a + b;
             a = temp;
         }
         // printing the number
-        System.out.println(sumEven);
+        System.out.println(sum);
     }
 }
 
