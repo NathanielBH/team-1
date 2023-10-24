@@ -1,3 +1,4 @@
+// Bugs: In line 10, thw while loop should be < not <=; line 18 should be "a + b" not "a - b"; Initials: ES
 #include <iostream>
 
 int main()
@@ -6,7 +7,7 @@ int main()
     int a = 0, b = 1;
     int sum_even = 0;
     // Summing even Fibonacci Numbers up to 4000000
-    while (b < 4000000) {
+    while (b <= 4000000) {
         // Check for even number
         if (b % 2 == 0) {
             // Sum if even
@@ -14,7 +15,7 @@ int main()
         }
         // Update Fibonacci Sequence
         int temp = b;
-        b = a + b;
+        b = a - b;
         a = temp;
     }
     // Print the sum
