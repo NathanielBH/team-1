@@ -3,6 +3,7 @@
 #include <sstream>
 #include <chrono>
 
+// removed percentages from formatted_date_ss: IC
 int main()
 {
     // Create date string
@@ -16,7 +17,7 @@ int main()
     // Create a stringstream onject 
     std::stringstream formatted_date_ss;
     // Format the date_obj variable using the specified format %m/%d/%Y %H:%M:%S (month/day/year hour:minute:second) and write it to the formatted_date_ss stringstream.
-    formatted_date_ss << std::put_time(&date_obj, "%m/%d/%Y %H:%M:%S");
+    formatted_date_ss << std::put_time(&date_obj, "m/d/Y H:M:S");
     // Extracts the formatted date from the stringstream formatted_date_ss and converts it to a string
     std::string formatted_date = formatted_date_ss.str();
 
